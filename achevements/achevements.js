@@ -24,7 +24,7 @@ const acheve = {
     }
     
     // Show the toast
-    this.showToast(string, string3);  // ← Call showToast with "this."
+    this.showToast(string, string3,string4);  // ← Call showToast with "this."
   },  // ← Need comma here
   
   showToast(title, description){  // ← This was nested inside grantAchevement - moved it out
