@@ -1,5 +1,5 @@
 const acheve = {
-  function load(string2){
+  load(string2){
     if(string2==="memory"){
       let SAVETO = MEMORY
         console.warn("achevements.js will not save achevement's on memory mode")
