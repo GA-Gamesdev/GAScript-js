@@ -14,7 +14,7 @@ const acheve = {
     console.log("achevements.js loaded")
   },  // ← Need comma here
   
-  grantAchevement(string, string3){
+  grantAchevement(string, string3,string4){
     // string is achievement name
     // string3 is the achievementID
     
@@ -32,7 +32,7 @@ const acheve = {
     const toast = document.createElement('div');
     toast.className = 'achievement-toast';
     toast.innerHTML = `
-      <div class="achievement-icon">🏆</div>
+      <div class="achievement-icon"><img=src=${string4}></img></div>
       <div class="achievement-content">
         <div class="achievement-title">${title}</div>
         <div class="achievement-desc">${description}</div>
