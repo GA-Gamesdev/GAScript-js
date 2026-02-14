@@ -1,25 +1,33 @@
 const acheve = {
-SAVETO : null,
+  SAVETO: null,
+  
   load(string2){
-    if(string2==="memory"){
-       SAVETO = "MEMORY"
-        console.warn("achevements.js will not save achevement's on memory mode")
+    if(string2 === "memory"){
+      this.SAVETO = "MEMORY"  // ← Need "this."
+      console.warn("achevements.js will not save achevement's on memory mode")
       console.log("achevement.js set to MEMORY")
     }
-        if(string2==="localStorage"){
-       SAVETO = "LOCALSTORAGE"
-          console.log("achevement.js set to LOCALSTORAGE")
+    if(string2 === "localStorage"){
+      this.SAVETO = "LOCALSTORAGE"  // ← Need "this."
+      console.log("achevement.js set to LOCALSTORAGE")
     }
-  console.log("achevements.js loaded")
-  }
-
-  grantAchevement(string,string3){
-//string is achevement name
-  //string3 is the achevementID
-  //soon there will be icon for html achevement stuff(when that happens...)
-    localStorage(string,1)
-
-  showToast(title, description){
+    console.log("achevements.js loaded")
+  },  // ← Need comma here
+  
+  grantAchevement(string, string3){
+    // string is achievement name
+    // string3 is the achievementID
+    
+    // Save to localStorage
+    if(this.SAVETO === "LOCALSTORAGE"){
+      localStorage.setItem(string3, "1");  // ← Correct localStorage syntax
+    }
+    
+    // Show the toast
+    this.showToast(string, string3);  // ← Call showToast with "this."
+  },  // ← Need comma here
+  
+  showToast(title, description){  // ← This was nested inside grantAchevement - moved it out
     // Create toast element
     const toast = document.createElement('div');
     toast.className = 'achievement-toast';
@@ -43,6 +51,4 @@ SAVETO : null,
       setTimeout(() => toast.remove(), 300);
     }, 4000);
   }
-  }
-  
 }
