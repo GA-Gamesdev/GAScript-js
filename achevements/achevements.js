@@ -2,6 +2,7 @@ const acheve = {
   SAVETO: null,
   
   load(string2){
+    console.log("achevements.js loaded")
     if(string2 === "memory"){
       this.SAVETO = "MEMORY"  // ← Need "this."
       console.warn("achevements.js will not save achevement's on memory mode")
@@ -11,7 +12,7 @@ const acheve = {
       this.SAVETO = "LOCALSTORAGE"  // ← Need "this."
       console.log("achevement.js set to LOCALSTORAGE")
     }
-    console.log("achevements.js loaded")
+   
   },  // ← Need comma here
   
   grantAchevement(string,achevename){
