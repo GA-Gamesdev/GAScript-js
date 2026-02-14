@@ -1,5 +1,5 @@
 const acheve = {
-SAVETO : null
+SAVETO : null,
   load(string2){
     if(string2==="memory"){
        SAVETO = MEMORY
