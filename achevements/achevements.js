@@ -32,6 +32,7 @@ console.error("this function is not availiable for MEMORY settings")
        console.log("achevement ID: "+string+"has been revoked")
        }
   }
+}
 //big shit
   isUnlocked(string){
 let CHECKVALUE = localStorage.getItem(string)
