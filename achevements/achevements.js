@@ -27,7 +27,7 @@ const acheve = {
     this.showToast(string, string3,string4);  // ← Call showToast with "this."
   },  // ← Need comma here
   
-  showToast(title, description){  // ← This was nested inside grantAchevement - moved it out
+  showToast(title, description,iconUrl){  // ← This was nested inside grantAchevement - moved it out
     // Create toast element
     const toast = document.createElement('div');
     toast.className = 'achievement-toast';
