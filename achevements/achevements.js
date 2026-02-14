@@ -1,4 +1,4 @@
-function acheve(){
+function acheve.load("MEMORY"){
   function load(string2){
     if(string2==="memory"){
       let SAVETO = MEMORY
