@@ -14,13 +14,13 @@ const acheve = {
     console.log("achevements.js loaded")
   },  // ← Need comma here
   
-  grantAchevement(string){
+  grantAchevement(string,achevename){
     // string is achievement name
     // string3 is the achievementID
     if(this.SAVETO === "MEMORY"){
       sessionStorage.setItem(string, "1");  // ← Correct localStorage syntax
     }else{  
       localStorage.setItem(string, "1");}
-    
+    console.log("achevement "+achevename+" has been granted to player")
   }
 }
