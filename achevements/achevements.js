@@ -22,7 +22,7 @@ const acheve = {
     }else{  
       localStorage.setItem(string, "1");}
     console.log("achevement "+achevename+" has been granted to player")
-  }
+  },
   //SHIT
   removeAchevement(string){
        if(this.SAVETO === "MEMORY"){
@@ -31,8 +31,8 @@ console.error("this function is not availiable for MEMORY settings")
          localStorage.removeItem(string)
        console.log("achevement ID: "+string+"has been revoked")
        }
-  }
-}
+  },
+
 //big shit
   isUnlocked(string){
 let CHECKVALUE = localStorage.getItem(string)
