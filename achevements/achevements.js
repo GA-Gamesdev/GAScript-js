@@ -32,7 +32,7 @@ const acheve = {
     const toast = document.createElement('div');
     toast.className = 'achievement-toast';
     toast.innerHTML = `
-      <div class="achievement-icon"><img src=${string4}></img></div>
+      <div class="achievement-icon"><img src=${iconUrl}></img></div>
       <div class="achievement-content">
         <div class="achievement-title">${title}</div>
         <div class="achievement-desc">${description}</div>
