@@ -15,7 +15,7 @@ const acheve = {
    
   },  // ← Need comma here
   
-  grantAchevement(string,achevename){
+  grant(string,achevename){
     // string is achievement name
     // string3 is the achievementID
     if(this.SAVETO === "MEMORY"){
@@ -25,7 +25,7 @@ const acheve = {
     console.log("achevement "+achevename+" has been granted to player")
   },
   //SHIT
-  removeAchevement(string){
+  remove(string){
        if(this.SAVETO === "MEMORY"){
 console.error("this function is not availiable for MEMORY settings")
        }else{
