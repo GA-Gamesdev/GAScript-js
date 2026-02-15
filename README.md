@@ -6,6 +6,8 @@ for achevements you dont want to store use acheve.load("memory")
 
 for achevements you want to store use acheve.load("localStorage")
 
+this command CANNOT BE RUN TWICE!!!!
+
 to grant the player an achevement use acheve.grantAchevement(ACHEVEID,ACHEVETITLE)
 
 to revoke an achevement use removeAchevement(ACHEVEID)
