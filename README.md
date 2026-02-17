@@ -19,4 +19,25 @@ but right now you need to build your own achevement manager
 
 ### html
 
-coming soon...
+this is a long one so... enjoy?
+
+when you need to get an element from the html, use const NAME = html.element(ELEMENT_ID)
+
+when you need to detect a click for buttons, use isClicked(obj,code)
+note : the obj is the element you grabed with const NAME = html.element(ELEMENT_ID)
+
+to edit text content from the html, use setText(obj,text)
+
+to edit image content, use setImg(obj,image_path)
+
+to edit video/audio content, use setVideo/audio(obj,pathtocontent) respectivly
+
+to edit urls, use setURL(obj,URL)
+
+to add elements to the html document, use addElement(type,text,parent)
+the text element is not required, but you do have to just put blank parentasis
+
+to remove elements from the html, use removeElement(obj)
+
+I made this documenataion and code late at night so I can't garentiy everything is correct and works...
+if there are any issues go to the issues tab and report it, its going to make development 10X quicker...
