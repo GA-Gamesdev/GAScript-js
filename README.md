@@ -40,4 +40,23 @@ the text element is not required, but you do have to just put blank parentasis
 to remove elements from the html, use removeElement(obj)
 
 I made this documenataion and code late at night so I can't garentiy everything is correct and works...
-if there are any issues go to the issues tab and report it, its going to make development 10X quicker...
+if there are any issues go to the issues tab and report it, its going to make development 10X quicker.
+even though messing with html through js is easier using this library, you still need to know html/css to use it...
+### input
+
+when you need to detect key input, use keyPressed(key,code)
+
+to check when a key is released, use keyReleased(key,code)
+
+to check if a mouse button is pressed down, use mousePressed(code)
+note: this checks for all mouse buttons, same with the release function
+
+to check if a mouse button has been released, use mouseReleased(code)
+
+to check the mouse pos, use mouse.pos
+note: this counts as a variable as well as the other mouse functions
+
+to check the mouse x pos, use mouse.x
+
+to check the mouse y pos, use mouse.y
+
