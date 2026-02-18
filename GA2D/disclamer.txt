@@ -1,0 +1,5 @@
+WARNING
+
+  GA2D is still being worked on,
+but at the moment it has no documentation
+  good luck...
