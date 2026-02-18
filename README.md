@@ -60,3 +60,6 @@ to check the mouse x pos, use mouse.x
 
 to check the mouse y pos, use mouse.y
 
+### arrays
+
+coming soon...
