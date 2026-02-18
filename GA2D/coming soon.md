@@ -48,7 +48,11 @@ i hope to complete the project soonish
 
 making simple images and games with GAScript.js code
 
+##### will there be extentions?
 
+short answer is, yes...
+there will be a physics emgine(LONG AFTER GA2D 1 is done...)
+also you can make your own using WHATEVER YOU WANT
 
 welp...
 
