@@ -1,0 +1,36 @@
+    .mn{
+        width:320px;
+        height:70px;
+        right:30px;
+        top:30px;
+              background-image: linear-gradient(to bottom, #616cca, #7555b4);
+position:fixed;
+gap: 10px;
+display: flex;
+align-items: center;
+padding: 0 24px;
+border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.4s ease; 
+    }
+    .img-contan-fuck{
+        width:55px;
+        height:55px;
+        flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .text{
+          font-family:Fredoka ;
+color: white;
+font-size: 20px;
+font-weight: 500;
+    }
+    .mn.show{
+        opacity: 1;
+    }
