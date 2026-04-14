@@ -1,65 +1,46 @@
-### achevements
+achevements.js v1.11
+docs:
 
-acheve.load() is what you start with,
+acheve.load(API_MODE)
+starts the API system on "localStorage" or "memory" mode,
 
-for achevements you dont want to store use acheve.load("memory")
+note : memory is still being worked on and is NO WHERE CLOSE TO FINSIHED
 
-for achevements you want to store use acheve.load("localStorage")
+acheve.grant(ID,NAME,ICON)
+grants an achievement for a user, this also causes a achievement toast to pop-up in the top right corner. this displays your achievement icon and name. when choosing an ID DO NOT MAKE IT YOUR ACHEVEMENT NAME, THIS IS A BIG NO NO. this is due to everything being through localStorage so users can edit and grant achievements at will.
 
-this command CANNOT BE RUN TWICE!!!!
+note : in the load system there will be a system for turning off the achievement toast in the load script.
 
-to grant the player an achevement use acheve.grantAchevement(ACHEVEID,ACHEVETITLE)
+acheve.isUnlocked(ID)
+checks if the achievement ID is unlocked, and returns a true or false value.
 
-to revoke an achevement use removeAchevement(ACHEVEID)
+note : this doesn't work with MEMORY mode yet
 
-to check if you have an achevement or not use if(acheve.isUnlocked(ACHEVEID))
+acheve.remove(ID)
+removes the achievement with the selected ID, that's all it does...
 
-in the future, there will be an achevement hub website, for all achevements granted by achevements.js
-but right now you need to build your own achevement manager
+note: this doesn't work with MEMORY mode yet
 
-### html
+acheve.addProgress(ID, NUMBER)
+adds {NUMBER} progress to the achievement ID
 
-this is a long one so... enjoy?
+acheve.checkProgress(ID)
+checks the progress of the achievement ID
 
-when you need to get an element from the html, use const NAME = html.element(ELEMENT_ID)
+setup:
+make sure that you have the script and CSS for the achievement toast.
 
-when you need to detect a click for buttons, use isClicked(obj,code)
-note : the obj is the element you grabed with const NAME = html.element(ELEMENT_ID)
+2. type acheve.load() and select your API_MODE
 
-to edit text content from the html, use setText(obj,text)
+3. its ready to grant achievements!
 
-to edit image content, use setImg(obj,image_path)
+4(optional). to edit the CSS for the toast is:
 
-to edit video/audio content, use setVideo/audio(obj,pathtocontent) respectivly
+ 
+.mn	the main bg color. (default is G.A Game's logo colors)
+.img-contan-fun	image container, this is what changes the icon looks like
+.text	main text for the toast
 
-to edit urls, use setURL(obj,URL)
+note : when editing this don't forget your !important in the CSS
 
-to add elements to the html document, use addElement(type,text,parent)
-the text element is not required, but you do have to just put blank parentasis
-
-to remove elements from the html, use removeElement(obj)
-
-I made this documenataion and code late at night so I can't garentiy everything is correct and works...
-if there are any issues go to the issues tab and report it, its going to make development 10X quicker.
-even though messing with html through js is easier using this library, you still need to know html/css to use it...
-### input
-
-when you need to detect key input, use keyPressed(key,code)
-
-to check when a key is released, use keyReleased(key,code)
-
-to check if a mouse button is pressed down, use mousePressed(code)
-note: this checks for all mouse buttons, same with the release function
-
-to check if a mouse button has been released, use mouseReleased(code)
-
-to check the mouse pos, use mouse.pos
-note: this counts as a variable as well as the other mouse functions
-
-to check the mouse x pos, use mouse.x
-
-to check the mouse y pos, use mouse.y
-
-### arrays
-
-coming soon...
+good luck (;
